@@ -152,7 +152,9 @@ class LIBBASLER_API Camera
     void getPacketSize(int& isize);    
     void setInterPacketDelay(int ipd);
     void getInterPacketDelay(int& ipd);
-    void getMaxThroughput(int& ipd);    
+    bool isMaxThroughputAvailable() const;
+    void getMaxThroughput(int& ipd);
+    bool isCurrentThroughputAvailable() const;
     void getCurrentThroughput(int& ipd);
     void getBandwidthAssigned(int& ipd);
 
