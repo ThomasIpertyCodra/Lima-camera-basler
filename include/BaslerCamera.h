@@ -38,6 +38,7 @@
 #include "lima/HwBufferMgr.h"
 #include "lima/HwEventCtrlObj.h"
 #include "BaslerCompatibility.h"
+#include "BaslerSyncCtrlObj.h"
 
 using namespace Pylon;
 
@@ -258,6 +259,7 @@ class LIBBASLER_API Camera
     bool			  m_video_flag_mode;
     void*			  m_tmp_buffer[NB_TMP_BUFFER];
     VideoCtrlObj*		  m_video;
+    SyncCtrlObj*		  m_sync;
     TrigMode			  m_trigger_mode;
 };
 } // namespace Basler
